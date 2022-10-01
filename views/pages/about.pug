@@ -1,0 +1,17 @@
+extends ../base.pug
+
+block variables
+  - var template = "about"
+
+block content
+  //- - var img = document.data.hero_gallery.gallery_image[0].url
+  h2 #{document.data.title}
+  .about
+    section.about_gallery
+      each image in gallery
+        img(src=image.url alt=image.alt)
+
+  section
+    each section in document.data.body
+      if section.slice_type == 'title'
+        h2=section.primary.text
