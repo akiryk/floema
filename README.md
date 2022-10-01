@@ -3,7 +3,7 @@
 ## Get Started
 
 ```sh
-git clone
+git clone https://github.com/akiryk/floema.git
 npm install
 ```
 
